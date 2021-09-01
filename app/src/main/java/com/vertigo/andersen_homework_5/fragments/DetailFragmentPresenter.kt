@@ -14,9 +14,7 @@ class DetailFragmentPresenter {
     }
 
     fun editContactData(id: Int?, contactsData: ContactsData, name: String, secondName: String, phoneNumber: String) {
-        Log.v("APP", "${ContactsData().mapContacts}")
         contactsData.setData(id!!, Contact(name, secondName, phoneNumber))
-        Log.v("APP", "${ContactsData().mapContacts}")
     }
 
     fun attachView(view: DetailFragment) {
